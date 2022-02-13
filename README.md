@@ -1,4 +1,4 @@
-# composition-1
+# Carrito de compras-composition-Api-vuex
 
 ## Project setup
 ```
