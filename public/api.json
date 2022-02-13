@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Escoge tu comida favorita",
+        "img": {
+          "imgName": "step-1",
+          "imgExtension": "jpg"
+        },
+        "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fstep-1.jpg?alt=media&token=37d1d500-78d9-4353-880b-88a88b2cec1b"
+      },
+              {
+        "title": "Rápido delivery",
+        "img": {
+          "imgName": "step-2",
+          "imgExtension": "jpg"
+        },
+        "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fstep-2.jpg?alt=media&token=fb7e227b-a6cd-4187-8fc7-2ea0c1760c97"
+      },
+                      {
+        "title": "Fáciles métodos de pago",
+        "img": {
+          "imgName": "step-3",
+          "imgExtension": "jpg"
+        },
+        "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fstep-3.jpg?alt=media&token=27b0e671-dce6-411e-9402-885a979af6d3"
+      },
+                              {
+        "title": "Y finalmente disfrutas de tu comida",
+        "img": {
+          "imgName": "step-4",
+          "imgExtension": "jpg"
+        },
+        "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fstep-4.jpg?alt=media&token=1f656b8f-89b3-44d5-9aee-c50ac848775a"
+      }
+
+]

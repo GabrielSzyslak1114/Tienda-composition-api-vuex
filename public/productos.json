@@ -1,0 +1,220 @@
+[
+    {
+     "id": 1,
+     "price": 2,
+     "title": "Tasty burger",
+      "name": "s-img-1",
+      "categoria": "especialidad",
+      "extension": "jpg",
+      "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fs-img-1.jpg?alt=media&token=adb4ea30-e836-4c72-baf1-6fe20f30bd87",
+      "icon": {
+        "iconUrl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fs-1.png?alt=media&token=90543b23-27a2-4116-82a6-e3a574076537"
+      } 
+    },
+    {
+     "id": 2,
+     "price": 15,
+     "title": "Tasty pizza",
+      "name": "s-img-2",
+      "categoria": "especialidad",
+      "extension": "jpg",
+      "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fs-img-2.jpg?alt=media&token=c0e1c765-abf7-4c81-8a2d-8f858ce4b9b1",
+      "icon": {
+        "iconUrl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fs-2.png?alt=media&token=88489d8a-52f1-436c-b97f-c66161e2a087"
+      } 
+    },
+    {
+     "id": 3,
+     "price": 8,
+     "title": "Cold ice-cream",
+      "name": "s-img-3",
+      "categoria": "especialidad",
+      "extension": "jpg",
+      "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fs-img-3.jpg?alt=media&token=10dd7fd5-fa97-433f-8298-299b547f4664",
+      "icon": {
+        "iconUrl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fs-3.png?alt=media&token=8f90246e-cc7d-46ca-bf63-be774e49a2a5"
+      } 
+    },
+    {
+     "id": 4,
+     "price": 5,
+     "title": "Bebida especial",
+      "name": "s-img-4",
+      "categoria": "especialidad",
+      "extension": "jpg",
+      "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fs-img-4.jpg?alt=media&token=afa8a120-f01a-48bb-949c-ca5571e9ba01",
+      "icon": {
+        "iconUrl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fs-4.png?alt=media&token=fccdd3d8-660b-4340-906c-a5db030c6e97"
+      } 
+    },
+    {
+      "id": 5,
+      "price": 6,
+      "title": "Tasty sweets",
+       "name": "s-img-5",
+       "categoria": "especialidad",
+       "extension": "jpg",
+       "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fs-img-5.jpg?alt=media&token=a26d8ba1-35d5-4060-bed0-20cca0f406b2"
+,       "icon": {
+          "iconUrl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fs-5.png?alt=media&token=290d20ed-e4a7-4553-a412-b305f634ff0e"
+} 
+     },
+     {
+      "id": 6,
+      "price": 6,
+      "title": "Healty breakfast",
+       "name": "s-img-6",
+       "categoria": "especialidad",
+       "extension": "jpg",
+       "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fs-img-6.jpg?alt=media&token=943e92e5-19c8-4e1c-a2ce-3ebd9350a653",
+        "icon": {
+          "iconUrl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/icons%2Fs-6.png?alt=media&token=8d39fcbc-df33-4b86-87ba-a9729cfc7915"
+        } 
+     },
+
+
+
+     
+
+
+     {
+      "id": 7,
+      "price": 4,
+      "title": "Mega burger",
+       "name": "p-1",
+       "categoria": "popular",
+       "extension": "jpg",
+       "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fp-1.jpg?alt=media&token=457f6f94-76b9-4c29-93f2-baab24808fac"
+     },
+     {
+       "id": 8,
+       "price": 6,
+       "title": "tasty cakes",
+        "name": "p-2",
+        "categoria": "popular",
+        "extension": "jpg",
+        "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fp-2.jpg?alt=media&token=0baa7861-03e4-49cd-89b6-86a784e8a691"      
+      },
+      {
+       "id": 9,
+       "price": 9,
+       "title": "Combo frituras",
+        "name": "p-3",
+        "categoria": "popular",
+        "extension": "jpg",
+        "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fp-3.jpg?alt=media&token=2cb10e23-00cb-493c-9113-610faf0553ea"
+      },
+      {
+        "id": 10,
+        "price": 4,
+        "title": "tasty cupcakes",
+         "name": "p-4",
+         "categoria": "popular",
+         "extension": "jpg",
+         "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fp-4.jpg?alt=media&token=2fcd9258-0640-4745-ab99-1e895a28cd95"
+       },
+       {
+        "id": 11,
+        "price": 3.8,
+        "title": "Bebida ",
+         "name": "p-5",
+         "categoria": "popular",
+         "extension": "jpg",
+         "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fp-5.jpg?alt=media&token=a8be4852-39c2-410a-94aa-e07465f6acd2"
+
+       },
+       {
+        "id": 12,
+        "price": 1,
+        "title": "Fruti paleta",
+         "name": "p-6",
+         "categoria": "popular",
+         "extension": "jpg",
+         "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fp-6.jpg?alt=media&token=2dc49107-19b9-41e4-ac45-f29e20d3508a" 
+       },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       {
+         "id": 14,
+         "price": 3,
+         "title": "Emparedado Mix",
+          "name": "g-2",
+          "categoria": "desayuno",
+          "extension": "jpg",
+          "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fg-2.jpg?alt=media&token=e0d7bea7-0bcf-4324-ba1b-3b07eab4d845"      
+        },
+        {
+         "id": 15,
+         "price": 5,
+         "title": "Taco",
+          "name": "g-3",
+          "categoria": "desayuno",
+          "extension": "jpg",
+          "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fg-3.jpg?alt=media&token=99ade48f-143c-4ff0-bbe8-d88a26900e2a"
+        },
+         {
+          "id": 17,
+          "price": 1.8,
+          "title": "Bocadillos ",
+           "name": "g-5",
+           "categoria": "desayuno",
+           "extension": "jpg",
+           "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fg-5.jpg?alt=media&token=116d1690-0135-4fc8-b822-f0ce950e4b63"
+  
+         },
+         {
+          "id": 18,
+          "price": 5,
+          "title": "Pollo frito",
+           "name": "g-6",
+           "categoria": "desayuno",
+           "extension": "jpg",
+           "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fg-6.jpg?alt=media&token=c315778c-c335-45d9-9168-5b2f96c8ff03" 
+         },
+         {
+          "id": 19,
+          "price": 2,
+          "title": "Emparedado tradicional",
+           "name": "g-7",
+           "categoria": "desayuno",
+           "extension": "jpg",
+           "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fg-7.jpg?alt=media&token=07e040a5-dc4a-497f-8dbf-d47480f0e7da" 
+         },
+         {
+          "id": 20,
+          "price": 6,
+          "title": "Pan gourmet",
+           "name": "g-9",
+           "categoria": "desayuno",
+           "extension": "jpg",
+           "imgurl": "https://firebasestorage.googleapis.com/v0/b/restaurant-hamburguer-vue.appspot.com/o/productos%2Fg-9.jpg?alt=media&token=526144e0-3402-4807-bd72-5a46a7e538df" 
+         }
+  
+  
+  
+  
+
+
+
+
+  ]
