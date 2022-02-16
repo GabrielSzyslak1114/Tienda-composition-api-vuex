@@ -36,5 +36,6 @@ setup(){
       display: flex !important;
     justify-content: space-between;
     align-items: center;
+    transition: .2s ease;
 }
 </style>

@@ -118,10 +118,10 @@ header{
             align-items: center;
             top: 0px;
             right: 0px;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             background:  $color-secundary;
-            border-radius: 4px;
+            border-radius: 10px;
             cursor: pointer;
             transition: 0.2s;
             z-index: 1000;
@@ -189,24 +189,21 @@ header{
 
                    @media (max-width: 1160px) {
                         position: fixed;
-                        height: 65px;
-                        width: 65px;
-                        background: #fcfcfc;
+                        height: 60px;
+                        width: 60px;
+                        background: $color-secundary;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         right: 0;
                         bottom: 0;
-                        border-radius: 20px;
+                        border-radius: 10px;
                         border: 1px solid $color-secundary;
                         margin: 15px;
                         z-index: 100;
+                        cursor: pointer;
                         &:hover{
-                            background: $color-secundary;
                             transform: scale(0.9);
-                            i{
-                                color: #fcfcfc
-                            }
                         }
                         i {
                                 width: 100%;
@@ -215,7 +212,7 @@ header{
                                 justify-content: center;
                                 height: 100%;
                                 font-size: 30px;
-                                color: $color-secundary;
+                                color: #fcfcfc
                         }
                    }
 

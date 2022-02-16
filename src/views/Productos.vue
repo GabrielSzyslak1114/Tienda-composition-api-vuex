@@ -42,7 +42,6 @@ export default {
 <style lang="scss" scoped>
 .section-filtrador{
     border-radius: 10px;
-    box-shadow: 5px 9px 7px $shadow-primary;
     padding: 10px 50px;
 }
 section{

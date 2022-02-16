@@ -79,6 +79,7 @@ body{
   z-index: 0;
   margin-top: 1rem;
   background: #fff;
+  transition: .2s ease;
 }
 
 .btn:hover{

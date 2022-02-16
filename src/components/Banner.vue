@@ -40,6 +40,12 @@ svg{
   background-size: cover;
   background-position: center;
   padding: 3rem 6rem;
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+    padding: 3rem;
+        margin-top: 70px;
+
+  }
     .content{
       flex:1 1 40rem;
       padding-top: 6.5rem;
@@ -55,6 +61,9 @@ svg{
     }
     .image{
       flex:1 1 40rem;
+      @media (max-width: 900px) {
+        flex: 1rem;
+      }
        img{
         width:75%;
         padding: 2rem;
