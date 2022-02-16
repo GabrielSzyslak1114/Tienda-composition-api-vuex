@@ -10,6 +10,10 @@
             <h2>Precio: $<span>{{producto.price}}</span></h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sequi recusandae fuga quam ab aut!</p>
         </div>
+        <div class="box-btn">
+        <a class="btn" role="button" @click="agregarProducto(producto)">Agregar al carrito</a>
+        </div>
+
       </main>
   </section>
 </template>
@@ -17,6 +21,7 @@
 <script>
 import { onMounted, ref } from '@vue/runtime-core'
 import Title from '../components/Title.vue'
+import {useStore} from 'vuex'
 export default {
     props: ['id'],
     components:{
@@ -24,6 +29,7 @@ export default {
     },
     setup(props){
         const producto = ref({})
+        const store = useStore()
         onMounted(async()=>{
             try {
                 const res = await fetch(`https://restaurant-hamburguer-vue-default-rtdb.firebaseio.com/productos/${props.id}.json`)
@@ -32,7 +38,12 @@ export default {
                 console.log(error, 'no consumio')
             }
         })
-        return{producto}
+        const agregarProducto = producto =>{
+            store.dispatch('addCar', producto)
+            {store.commit('verCarrito')}
+
+        }
+        return{producto, agregarProducto}
     }
 }
 </script>
@@ -45,11 +56,19 @@ export default {
     display: flex;
     align-items: center;
     margin: 100px auto ;
+    @media (max-width: 900px) {
+        flex-direction: column;
+        height: auto;
+    }
 
     .product-box-image{
         height: 100%;
         width: 50%;
         padding: 50px;
+        @media (max-width: 900px) {
+        width: 100%;
+
+    }
 
         img{
             width: 100%;
@@ -62,6 +81,9 @@ export default {
         display: flex;
         flex-direction: column;
         padding: 50px;
+         @media (max-width: 900px) {
+        width: 100%;
+    }
         .descrip{
             margin-top: 15px;
         }

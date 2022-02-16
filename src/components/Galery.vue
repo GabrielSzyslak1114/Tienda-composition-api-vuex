@@ -17,7 +17,7 @@ props: ['image']
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .box-container{
   display: flex;
@@ -33,6 +33,16 @@ props: ['image']
   border-radius: .5rem;
   position: relative;
   overflow: hidden;
+
+
+      &:hover{
+      .image{
+        top:0;
+      }
+      .content{
+        transform: translateY(100%);
+      }
+    }
 }
 
 .box-container .box img{

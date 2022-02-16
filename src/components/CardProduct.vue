@@ -3,13 +3,6 @@
             <span class="price"> ${{producto.price}}</span>
             <img :src="producto.imgurl" alt="">
             <h3>{{producto.title}}</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
             <div class="box-btn">
             <router-link class="btn" :to="`/producto/${producto.id}`">ver</router-link>
             <a class="btn" @click="agregar(producto)">Agregar</a>

@@ -2,7 +2,7 @@
   <div class="group-filter">
     <button :class="fondoBtn" @click="filtrar('especialidad')">Especialidad</button>
     <button :class="fondoBtn" @click="filtrar('popular')">Popular</button>
-    <button :class="fondoBtn">Vegetariana</button>
+
     <button :class="fondoBtn" @click="filtrar('desayuno')">Desayunos</button>
     <button :class="fondoBtn" @click="filtrar('')">Todos</button>
   </div>
@@ -31,7 +31,7 @@ setup(){
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 .group-filter{
     width: 100%;
     height: 150px;
@@ -39,6 +39,11 @@ setup(){
     justify-content: space-evenly;
     align-items: center;
 
+    @media (max-width: 1000px) {
+          justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    }
     
 }
 </style>

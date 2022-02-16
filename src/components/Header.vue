@@ -9,8 +9,13 @@
         <router-link to="/productos">Productos</router-link>
         <router-link to="/contacto">Contacto</router-link>
         <a @click="verCarrito" class="box-icon-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
     </nav>
 </header>
+    <div class="box-icon-cart-mobile">
+        <a @click="verCarrito" class="icon-cart-mobile"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+
 </template>
 
 <script>
@@ -72,11 +77,11 @@ header{
                 color:#666;
 
                 &.router-link-exact-active {
-                    color: $color-primary;
+                    color: $color-secundary;
                 }
 
                 &:hover{
-                    color: $color-primary;
+                    color: $color-secundary;
 
                 }
                     @media(max-width:1160px){
@@ -84,7 +89,7 @@ header{
                         padding:1.5rem;
                         display: block;
                         border: 1px solid rgba(146, 146, 146, 0.1);
-                        border-left:.5rem solid $color-primary;
+                        border-left:.5rem solid $color-secundary;
                         background: $color-text-primary;
                     }
             }
@@ -115,7 +120,7 @@ header{
             right: 0px;
             width: 50px;
             height: 50px;
-            background:  $color-primary;
+            background:  $color-secundary;
             border-radius: 4px;
             cursor: pointer;
             transition: 0.2s;
@@ -162,13 +167,62 @@ header{
             justify-content: center;
             align-items: center;
             height: 35px;
-            color: $color-primary;
+            color: $color-secundary;
             cursor: pointer;
             &:hover{
                 transform: scale(.9);
                 i{
-                    color: $color-primary;
+                    color: $color-secundary;
                 }
             }
+            @media(max-width:1160px){
+                display: none !important;
+            }
+
+
+
+
 }
+
+        .box-icon-cart-mobile{
+                   display: none;
+
+                   @media (max-width: 1160px) {
+                        position: fixed;
+                        height: 65px;
+                        width: 65px;
+                        background: #fcfcfc;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        right: 0;
+                        bottom: 0;
+                        border-radius: 20px;
+                        border: 1px solid $color-secundary;
+                        margin: 15px;
+                        z-index: 100;
+                        &:hover{
+                            background: $color-secundary;
+                            transform: scale(0.9);
+                            i{
+                                color: #fcfcfc
+                            }
+                        }
+                        i {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 100%;
+                                font-size: 30px;
+                                color: $color-secundary;
+                        }
+                   }
+
+                   .icon-cart-mobile{
+
+                       display: flex;
+                       position: relative;
+                   }
+        }
 </style>

@@ -2,7 +2,7 @@
   <section :class="activarCarrito" >
     <main class="carrito-box">
         <div class="header-carrito">
-            <h4>Carrito de compras</h4>
+            <h4>Tu canasta </h4>
             <div class="box-btn-cart">
                 <button class="btn-circle-carrito" id="vaciar-carrito" @click="vaciarCar">
                 <i class="fas fa-trash"></i>
@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 
 .body-carrito{
@@ -60,34 +60,62 @@ export default {
     position: fixed;
     top: 0;
     transition: .4s;
-
-    right: -100% !important;
+    right: -100% ;
+        background: #ffff;
+        @media (max-width: 1160px) {
+    top: none;
+    bottom: -100%;
+    width: 100%;
+    top: auto;
+    height: 55%;
+    right: auto !important;
+        }
 }
 
 .activarCarrito{
+    top: 60px !important;
     right: 0% !important;
-    width: 40%;
+    margin: 0 !important;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1%;
+    padding: 5px 12px;
     background: #ffff;
     position: fixed;
-    top: 0;
+
     z-index: 100;
     box-shadow: 10px 5px 10px 10px rgb(0,0,0,.1);
     transition: .4s;
+
+        @media (max-width: 1160px) {
+            bottom: 0% !important;
+            top: auto !important;
+            width: 100%;
+            height: 52%;
+
+            margin: 0;
+            border-radius: 50px 50px 0px 0px;
+            box-shadow: 0px -2px 10px 0px rgba(43, 43, 43, 0.096);
+    }
+    
   
 }
 
     .carrito-box{
     width: 100%;
     height: 100%;
-    margin-top: 3%;
     position: relative;
     display: grid;
-    grid-template-rows: 50px 500px 150px;
-    grid-gap: 15px;
+    grid-template-rows: 10% 65% 15%;
+    grid-gap: 5px;
+    @media (max-width: 1160px) {
+    grid-template-rows: 15% 60% 15%;
+    margin: 0 auto;
+    width: 95%;
+    grid-gap: 5px;
+
+    }
         h4{
             font-size: 3em;
             color: $color-background;
@@ -98,17 +126,23 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1160px) {
+            padding: 5px;
+
+    }
     }
 
     .footer-carrito{
-    border-radius: 15px;
-    background: #fcfcfc;
+    padding: 1px;
+    min-height: 115px;
+    position: relative;
+    background: white;
     display: flex;
     align-items: center;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    height: 100px;
+    @media (max-width: 1160px) {
+        min-height: 70px;
+    }
+
     }
 
     .box-btn-cart{
@@ -122,17 +156,17 @@ export default {
             height: 35px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.315);
-            border: 1px solid $color-primary;
-            color: $color-primary;
+            border: 1px solid $color-secundary;
+            color: $color-secundary;
             &:hover{
-                background: $color-primary;
+                background: $color-secundary;
                 transform: scale(.9);
                 i{
                 color: #ffff;
                 }
             }
         i{
-            color: red;
+            color: $color-secundary;
             cursor: pointer;
             height: 12px;
 
@@ -142,7 +176,13 @@ export default {
     .body-item-car{
     width: 100%;
     padding: 0%;
-    margin: 0%;
+    margin: 0 auto;
+
+        transition: height 0.3s ease 0s;
+    overflow: hidden;
+    height: auto;
+        overflow: auto;
+
 
     }
 </style>

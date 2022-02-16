@@ -4,11 +4,7 @@
 <section class="footer">
 
     <div class="share">
-        <a href="#" class="btn">facebook</a>
-        <a href="#" class="btn">twitter</a>
-        <a href="#" class="btn">instagram</a>
-        <a href="#" class="btn">pinterest</a>
-        <a href="#" class="btn">linkedin</a>
+        <a target="_blank" href="https://www.linkedin.com/in/gabriel-alberto-rodríguez-ruíz-b04882209" class="btn">linkedin</a>
     </div>
 
     <h1 class="credit"> Página de prueba <span> Gabriel Rodríguez </span> 2022 </h1>

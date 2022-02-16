@@ -5,7 +5,7 @@
     </picture>
     <main class="box-text">
         <h2>{{item.title}}</h2>
-        <h3>${{item.price * item.cantidad}}</h3>
+        <h3>${{priceProductTotal.toFixed(2)}}</h3>
     </main>
     <div class="box-btn-cart"> 
         <button class="btn-circle-carrito" @click="aumentarCar(item.id)"><i class="fas fa-plus"></i></button>
@@ -17,16 +17,22 @@
 </template>
 
 <script>
+import { computed } from '@vue/reactivity'
 import { useStore } from 'vuex'
 export default {
 props: {
     item: Object
 },
-setup(){
+setup(props, context){
     const store = useStore()
+
+    const priceProductTotal =  computed(()=>{
+        return props.item.price * props.item.cantidad
+    })
+    
     const  aumentarCar = (id)=> {store.commit('aumentarCar', id)}
     const disminuirCar = (id)=> {store.commit('disminuirCar', id)}
-    return{aumentarCar, disminuirCar}
+    return{priceProductTotal, aumentarCar, disminuirCar}
 }
 }
 </script>
@@ -35,18 +41,24 @@ setup(){
 
     .item-car{
     display: flex;
-    width: 100%;
-    height: 135px;
+    width: 98%;
+    height: 110px;
     background: #fcfcfc;
     border-radius: 15px;
     margin-bottom: 10px;
     box-shadow: 1px 4px 3px 1px rgb(0, 0, 0, .1);
+    @media (max-width: 1160px) {
+        height: 100px;
+    }
     }
 
     picture{
         position: relative;
         border-radius: 15px;
-        width: 30%;
+        width: 25%;
+        @media (max-width: 1160px) {
+            width: 20%;
+        }
 
         img{
             width: 100%;

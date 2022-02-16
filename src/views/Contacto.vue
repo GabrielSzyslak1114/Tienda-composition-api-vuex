@@ -31,7 +31,7 @@
 
 </section>
 
-<section>
+<section class="box-lideres">
   <Title :span="'Lideres'"/>
   <div class="container">
     <CardLider v-for="(lider, index) in arrayData" :key="index" :lider="lider"/>
@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 .contacto{
   margin: 100px auto;
@@ -120,11 +120,16 @@ export default {
   background:var(--red);
 }
 
+.box-lideres{
+  height: auto;
+  margin-bottom: 100px;
+}
+
     .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 450px;
+    height: auto;
     }
 </style>

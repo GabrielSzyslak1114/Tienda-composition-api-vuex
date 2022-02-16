@@ -1,7 +1,7 @@
 <template>
   <Banner/>
   <section>
-    <Title :title="`Rapido`" :span="`proceso`"></Title>
+    <Title :title="`Rápido`" :span="`proceso`"></Title>
     <main class="box-container">
       <div class="steps">
       <Steps v-for="(step, index) in arrayData" :key="index" :step="step"/>
@@ -78,7 +78,7 @@ export default {
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped>
 section{
   padding:2rem 9%;
   margin: 50px auto;

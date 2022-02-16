@@ -32,7 +32,7 @@ props: {
     transform: translateY(-30px);
       z-index: 2;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 990px) {
     transform: scale(1);
           margin: 20px;
       z-index: 1;

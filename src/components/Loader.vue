@@ -23,7 +23,7 @@ window.onload = fadeOut();
 }
 </script>
 
-<style>
+<style scoped>
 
 .loader-container{
   position: fixed;

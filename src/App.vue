@@ -69,8 +69,8 @@ body{
 .btn{
   display: inline-block;
   padding:.8rem 3rem;
-  border:.2rem solid $color-primary;
-  color: $color-primary;
+  border:.2rem solid $color-secundary;
+  color: $color-secundary;
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: .5rem;
@@ -79,6 +79,11 @@ body{
   z-index: 0;
   margin-top: 1rem;
   background: #fff;
+}
+
+.btn:hover{
+  color:$color-alterno;
+  border: .2rem solid $color-primary;
 }
 
 .btn::before{
@@ -97,9 +102,7 @@ body{
   left: 0;
 }
 
-.btn:hover{
-  color:$color-text-primary;
-}
+
 
 
     .btn-circle-carrito{
@@ -110,11 +113,11 @@ body{
             height: 35px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.315);
-            border: 1px solid $color-primary;
-            color: $color-primary;
+            border: 1px solid $color-secundary;
+            color: $color-secundary;
             cursor: pointer;
             &:hover{
-                background: $color-primary;
+                background: $color-secundary;
                 transform: scale(.9);
                 i{
                 color: #ffff;
@@ -123,7 +126,7 @@ body{
                 }
             }
         i{
-            color: red;
+            color: $color-secundary;
             cursor: pointer;
             height: 12px;
 

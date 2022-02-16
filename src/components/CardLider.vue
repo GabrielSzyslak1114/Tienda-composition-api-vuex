@@ -34,6 +34,7 @@ export default {
         height: 300px;
         display: flex;
         margin: 40px;
+        overflow: visible !important;
         &:hover{
            .imgBx{
                 transform: translate(-35px, -35px);
