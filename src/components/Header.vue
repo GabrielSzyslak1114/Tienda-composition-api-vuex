@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+    <router-link to="/" class="logo"><i class="fas fa-utensils"></i>food</router-link>
 
     <div :class="menu" @click="activarMenu"></div>
 
@@ -45,12 +45,13 @@ setup(){
 header{
   position: fixed;
   top:0; left: 0; right:0;
+  max-width: 100%;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: $color-text-primary;
-  padding:2rem 4%;
+  padding:2rem 4rem;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 
     @media(max-width:1160px){
