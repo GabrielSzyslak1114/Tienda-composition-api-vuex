@@ -60,6 +60,7 @@ export default {
     position: fixed;
     top: 0;
     transition: .4s ease-in-out;
+    opacity: 0;
     right: -100% ;
     background: #ffff;
         @media (max-width: 1160px) {
@@ -80,6 +81,7 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
+    opacity: 1;
     padding: 5px 12px;
     background: #ffff;
     position: fixed;
