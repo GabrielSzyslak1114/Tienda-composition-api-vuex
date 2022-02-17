@@ -1,7 +1,7 @@
 <template>
-<!-- order section starts  -->
 
-<section class="contacto" id="order">
+<section class="body-page-contacto">
+  <main class="contacto" id="order">
     <Title :span="'Contacto'"/>
     <div class="row">
         
@@ -29,16 +29,16 @@
 
     </div>
 
-</section>
+  </main>
 
-<section class="box-lideres">
+<main class="box-lideres">
   <Title :span="'Lideres'"/>
   <div class="container">
     <CardLider v-for="(lider, index) in arrayData" :key="index" :lider="lider"/>
   </div>
+</main>
 </section>
-
-
+  
 </template>
 
 <script>
@@ -50,6 +50,7 @@ export default {
   components: { Title, CardLider },
     setup(){
         const {arrayData} = useFetch('Lider.json')
+     
         return{
             arrayData
         }
@@ -58,7 +59,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.body-page-contacto{
+  padding: 0;
+}
 .contacto{
   margin: 100px auto;
 }
@@ -132,4 +135,6 @@ export default {
     flex-wrap: wrap;
     height: auto;
     }
+
+
 </style>

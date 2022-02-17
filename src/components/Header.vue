@@ -118,8 +118,8 @@ header{
             align-items: center;
             top: 0px;
             right: 0px;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background:  $color-secundary;
             border-radius: 10px;
             cursor: pointer;
@@ -151,7 +151,7 @@ header{
 }
 
 .menuactive{
-  background: $color-secundary;
+  background: $color-primary;
     &::before{
       transform: translateY(0px) rotate(45deg);
       box-shadow: 0 0 0 $color-alterno;
@@ -168,6 +168,7 @@ header{
             align-items: center;
             height: 35px;
             color: $color-secundary;
+            z-index: 100;
             cursor: pointer;
             &:hover{
                 transform: scale(.9);

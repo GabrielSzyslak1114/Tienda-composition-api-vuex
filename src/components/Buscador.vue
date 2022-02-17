@@ -25,12 +25,16 @@ setup(){
     .buscador{
         width: 100%;
         height: 50px;
+        margin-top: 10px ;
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         padding: 10px;
         color: rgba(0, 0, 0, 0.5);
         &:hover{
             border: 1px solid #ff383844;
+        }
+        @media (max-width: 1160px) {
+            width: 94%;
         }
     } 
 </style>

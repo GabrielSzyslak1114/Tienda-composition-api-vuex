@@ -1,7 +1,7 @@
   <template>
     <div class="box-pagar">
       <a>Total productos: {{totalCantidad}}</a>
-      <a class="btn btn-pagar" role="button"><span> Ir a pagar </span><span>Sub total: ${{totalPrecio}}</span></a>
+      <a class="btn btn-pagar" role="button" target="_blank" href="https://www.linkedin.com/in/gabriel-alberto-rodríguez-ruíz-b04882209"><span> Ir a pagar </span><span>Sub total: ${{totalPrecio}}</span></a>
     </div>
 
 </template>

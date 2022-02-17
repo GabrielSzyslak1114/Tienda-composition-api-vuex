@@ -1,9 +1,21 @@
 <template>
+
+  <Loader/>
   <Header/>
-  <router-view/>
+  
+    <router-view v-slot="{ Component }">
+    <transition name="route" 
+      enter-active-class="animate__animated animate__fadeInLeft"
+      leave-active-class="animate__animated animate__fadeOutLeft"
+      mode="out-in">
+      <component :is="Component"></component>
+    </transition>
+  </router-view>
+  
     <Carrito />
   <Footer/>
-  <Loader/>
+
+
 </template>
 <script>
 import Footer from './components/Footer.vue'
@@ -41,6 +53,7 @@ export default {
   transition:all .2s linear;
 }
 
+
 *::selection{
   background: $color-primary;
   color: $color-text-primary;
@@ -69,8 +82,8 @@ body{
 .btn{
   display: inline-block;
   padding:.8rem 3rem;
-  border:.2rem solid $color-secundary;
   color: $color-secundary;
+  border:.2rem solid $color-secundary;
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: .5rem;
@@ -89,11 +102,11 @@ body{
 
 .btn::before{
   content: '';
+  background: $color-primary;
   position: absolute;
   top:0; right: 0;
   width:0%;
   height:100%;
-  background: $color-primary;
   transition: .3s linear;
   z-index: -1;
 }
@@ -133,5 +146,16 @@ body{
 
         }
     }
+
+
+/* route transitions */
+.route-enter-from, .route-leave-to{
+  opacity: 0;
+  transform: translateX(100px);
+}
+.route-enter-active,.route-leave-active {
+  transition: all 0.3s ease-out; 
+}
+
 
 </style>

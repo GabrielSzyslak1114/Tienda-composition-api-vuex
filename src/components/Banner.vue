@@ -1,12 +1,14 @@
 <template>
    <!-- home section starts  -->
 <section class="home" id="home">
-
+      <transition appear @before-enter="beforeEnter" @enter="enter">
     <div class="content">
         <h3>Food made with love</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>
         <router-link to="/productos" class="btn">Ordena ahora</router-link>
     </div>
+      </transition>
+
 
     <div class="image">
         <img src="images/home-img.png" alt="">
@@ -21,8 +23,25 @@
 </template>
 
 <script>
+import gsap from "gsap"
 export default {
+  setup(){
+      const beforeEnter = (el) => {
+      el.style.opacity = 0
+      el.style.transform = 'translateX(100px)'
+    }
 
+    const enter = (el, done) => {
+      gsap.to(el, {
+        opacity: 1,
+        x: 0,
+        duration: 0.8,
+        onComplete: done,
+        delay: el.dataset.index * 0.2
+      })
+    }
+    return{ beforeEnter, enter }
+  }
 }
 </script>
 

@@ -80,7 +80,7 @@ export default createStore({
   getters:{
     //Ordena los productos de mayor a menor...
     topProductos(state){
-      return state.productosFiltrados.sort((a,b)=> a.price < b.price ? 1 : -1
+      return state.productosFiltrados.sort((a,b)=> a.price > b.price ? 1 : -1
       )
     },
     totalCantidad(state){

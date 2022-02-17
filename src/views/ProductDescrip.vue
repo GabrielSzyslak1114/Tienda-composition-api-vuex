@@ -1,6 +1,6 @@
 <template>
-  <h1>Producto descripcion: {{$route.params.id}}</h1>
-  <section class="body-product-Descrip">
+<section class="body-product-descript-page">
+  <main class="body-product-Descrip">
       <main class="product-box-image">
           <img :src="producto.imgurl" alt="">
       </main>
@@ -15,7 +15,9 @@
         </div>
 
       </main>
-  </section>
+  </main>
+</section>
+
 </template>
 
 <script>
@@ -49,6 +51,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.body-product-descript-page{
+    padding: 0;
+}
 .body-product-Descrip{
     width: 100%;
     height: 60vh;
