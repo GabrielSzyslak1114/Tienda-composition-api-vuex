@@ -28,7 +28,7 @@ export default {
   setup(){
       const beforeEnter = (el) => {
       el.style.opacity = 0
-      el.style.transform = 'translateX(100px)'
+      el.style.transform = 'translateX(25px)'
     }
 
     const enter = (el, done) => {
