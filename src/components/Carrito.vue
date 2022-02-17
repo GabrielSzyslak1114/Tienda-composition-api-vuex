@@ -59,17 +59,17 @@ export default {
     height: 100%;
     position: fixed;
     top: 0;
-    transition: .4s;
+    transition: .4s ease-in-out;
     right: -100% ;
-        background: #ffff;
+    background: #ffff;
         @media (max-width: 1160px) {
-    top: none;
-    bottom: -100%;
-    width: 100%;
-    top: auto;
-    height: 55%;
-    right: auto !important;
-        }
+            top: none;
+            bottom: -100%;
+            width: 100%;
+            top: auto;
+            height: 55%;
+            right: auto !important;
+                }
 }
 
 .activarCarrito{
@@ -83,17 +83,15 @@ export default {
     padding: 5px 12px;
     background: #ffff;
     position: fixed;
-
     z-index: 100;
     box-shadow: 10px 5px 10px 10px rgb(0,0,0,.1);
-    transition: .4s;
+    transition: .4s ease-in-out;
 
         @media (max-width: 1160px) {
             bottom: 0% !important;
             top: auto !important;
             width: 100%;
             height: 52%;
-
             margin: 0;
             border-radius: 50px 50px 0px 0px;
             box-shadow: 0px -2px 10px 0px rgba(43, 43, 43, 0.096);
@@ -109,13 +107,13 @@ export default {
     display: grid;
     grid-template-rows: 10% 65% 15%;
     grid-gap: 5px;
-    @media (max-width: 1160px) {
-    grid-template-rows: 15% 60% 15%;
-    margin: 0 auto;
-    width: 95%;
-    grid-gap: 5px;
+        @media (max-width: 1160px) {
+        grid-template-rows: 15% 60% 15%;
+        margin: 0 auto;
+        width: 95%;
+        grid-gap: 5px;
 
-    }
+        }
         h4{
             font-size: 3em;
             color: $color-background;
@@ -126,10 +124,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: 1160px) {
-            padding: 5px;
+        @media (max-width: 1160px) {
+                padding: 5px;
 
-    }
+        }
     }
 
     .footer-carrito{
@@ -139,9 +137,9 @@ export default {
     background: white;
     display: flex;
     align-items: center;
-    @media (max-width: 1160px) {
-        min-height: 70px;
-    }
+        @media (max-width: 1160px) {
+            min-height: 70px;
+        }
 
     }
 
