@@ -50,7 +50,7 @@ export default {
            await store.dispatch('getProducts')
            await store.dispatch('getProductsFiltrados', 'popular')
         })
-        const productos = computed(()=> store.getters.topProductos)
+        const productos = computed(()=> store.state.productosFiltrados)
 
         return{
             productos,  beforeEnter, enter 

@@ -42,7 +42,7 @@ export default {
   flex:1 1 30rem;
   position: relative;
     max-height: 400px;
-    max-width: 505px;
+
     img{
         height:25rem;
         object-fit: cover;
